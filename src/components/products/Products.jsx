@@ -7,16 +7,17 @@ import axios from "axios";
 const Products = () => {
     const [allProducts, setAllProducts] = useState([]);
     const [itemsPerPage, setItemPerPage] = useState(8);
+    const [currentPage, setCurrentPage] = useState(1);
     const [count, setCount] = useState(0)
 
     // get data by api
     useEffect(() => {
         const getData = async () => {
-            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products`)
+            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products?page=${currentPage}&size=${itemsPerPage}`)
             setAllProducts(data)
         }
         getData()
-    }, [])
+    }, [currentPage, itemsPerPage])
 
     // get count by api
     useEffect(() => {
@@ -27,9 +28,15 @@ const Products = () => {
         getCount()
     }, [])
 
-const numberOfPages = Math.ceil(count / itemsPerPage)
+    // const handle change button
+    const handleChengeButton = (value) => {
+        setCurrentPage(value)
+    }
 
-    const pages = [...Array(numberOfPages).keys()].map(element=>element+1)
+
+
+    const numberOfPages = Math.ceil(count / itemsPerPage)
+    const pages = [...Array(numberOfPages).keys()].map(element => element + 1)
     return (
         <div>
             <Container>
@@ -55,75 +62,81 @@ const numberOfPages = Math.ceil(count / itemsPerPage)
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
-                    {/* {
-                            allProducts.map((singleProduct, index) => {
-                                return (
-                                    <ProductCurd
-                                        key={index}
-                                        singleProduct={singleProduct}
-                                    />
-                                )
-                            })
-                        } */}
+                    {
+                        allProducts.map((singleProduct, index) => {
+                            return (
+                                <ProductCurd
+                                    key={index}
+                                    singleProduct={singleProduct}
+                                />
+                            )
+                        })
+                    }
                 </div>
 
                 {/* pagination here... */}
                 <div className="flex justify-center mt-20">
                     {/* previous button */}
-                    <a
-                        href="#"
-                        className="px-4 py-2 mx-1 text-gray-500 capitalize bg-white rounded-md cursor-not-allowed dark:bg-gray-800 dark:text-gray-600"
+                    <button
+                        disabled={currentPage === 1}
+                        onClick={() => handleChengeButton(currentPage - 1)}
+                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700 px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400  hover:text-white'
                     >
-                        <div className="flex items-center -mx-1">
+                        <div className='flex items-center -mx-1'>
+                            <span className='mx-1'>Previous</span>
+
                             <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6 mx-1 rtl:-scale-x-100"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
+                                xmlns='http://www.w3.org/2000/svg'
+                                className='w-6 h-6 mx-1 rtl:-scale-x-100'
+                                fill='none'
+                                viewBox='0 0 24 24'
+                                stroke='currentColor'
                             >
                                 <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M7 16l-4-4m0 0l4-4m-4 4h18"
+                                    strokeLinecap='round'
+                                    strokeLinejoin='round'
+                                    strokeWidth='2'
+                                    d='M17 8l4 4m0 0l-4 4m4-4H3'
                                 />
                             </svg>
-                            <span className="mx-1">previous</span>
                         </div>
-                    </a>
+                    </button>
 
                     {/* numbers */}
                     {
                         pages.map((btnNum, idx) => {
                             return (
-                                <button key={idx} className="px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200">{btnNum}</button>
+                                <button key={idx}
+                                    onClick={() => handleChengeButton(btnNum)}
+                                    className={currentPage === btnNum ? 'px-4 py-2 mx-1 text-white transition-colors duration-300 transform bg-red-600 rounded-md' : 'px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400  hover:text-white'}>{btnNum}</button>
                             )
                         })
                     }
                     {/* next button */}
-                    <a
-                        href="#"
-                        className="px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200"
+                    <button
+                        disabled={currentPage === numberOfPages}
+                        onClick={() => handleChengeButton(currentPage + 1)}
+                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700 px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400  hover:text-white'
                     >
-                        <div className="flex items-center -mx-1">
-                            <span className="mx-1">Next</span>
+                        <div className='flex items-center -mx-1'>
+                            <span className='mx-1'>Next</span>
+
                             <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6 mx-1 rtl:-scale-x-100"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
+                                xmlns='http://www.w3.org/2000/svg'
+                                className='w-6 h-6 mx-1 rtl:-scale-x-100'
+                                fill='none'
+                                viewBox='0 0 24 24'
+                                stroke='currentColor'
                             >
                                 <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                    strokeLinecap='round'
+                                    strokeLinejoin='round'
+                                    strokeWidth='2'
+                                    d='M17 8l4 4m0 0l-4 4m4-4H3'
                                 />
                             </svg>
                         </div>
-                    </a>
+                    </button>
                 </div>
 
                 <div>
