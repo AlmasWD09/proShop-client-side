@@ -1,24 +1,35 @@
 import { useEffect, useState } from "react";
-import useAllProduct from "../../hooks/useAllProduct";
 import Container from "../shared/Container";
 import ProductCurd from "./ProductCurd";
+import axios from "axios";
 
 
 const Products = () => {
     const [allProducts, setAllProducts] = useState([]);
-    // const [allProducts,refetch] = useAllProduct();
-    // console.log(allProducts);
+    const [itemsPerPage, setItemPerPage] = useState(8);
+    const [count, setCount] = useState(0)
 
-
+    // get data by api
     useEffect(() => {
-        fetch('http://localhost:5000/all-products')
-            .then(res => res.json())
-            .then(data => setAllProducts(data))
+        const getData = async () => {
+            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products`)
+            setAllProducts(data)
+        }
+        getData()
     }, [])
 
-    console.log(allProducts);
+    // get count by api
+    useEffect(() => {
+        const getCount = async () => {
+            const { data } = await axios(`${import.meta.env.VITE_API_URL}/counts`)
+            setCount(data.count)
+        }
+        getCount()
+    }, [])
 
-    const pages = [1,2,3,4,5]
+const numberOfPages = Math.ceil(count / itemsPerPage)
+
+    const pages = [...Array(numberOfPages).keys()].map(element=>element+1)
     return (
         <div>
             <Container>
@@ -43,8 +54,8 @@ const Products = () => {
                         </select>
                     </div>
                 </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
-                        {
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
+                    {/* {
                             allProducts.map((singleProduct, index) => {
                                 return (
                                     <ProductCurd
@@ -53,8 +64,8 @@ const Products = () => {
                                     />
                                 )
                             })
-                        }
-                    </div>
+                        } */}
+                </div>
 
                 {/* pagination here... */}
                 <div className="flex justify-center mt-20">
@@ -84,8 +95,8 @@ const Products = () => {
 
                     {/* numbers */}
                     {
-                        pages.map((btnNum,idx)=>{
-                            return(
+                        pages.map((btnNum, idx) => {
+                            return (
                                 <button key={idx} className="px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200">{btnNum}</button>
                             )
                         })
