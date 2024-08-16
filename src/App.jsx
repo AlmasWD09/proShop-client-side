@@ -1,12 +1,19 @@
 
 import './App.css'
+import Banner from './components/banner/Banner'
+import Footer from './components/footer/Footer'
+import Products from './components/products/Products'
+import Navbar from './components/shared/navbar/Navbar'
 
 function App() {
 
 
   return (
     <>
-      <h1 className='text-xl text-red-700'>hellow world</h1>
+      <Navbar />
+      <Banner />
+      <Products />
+      <Footer />
     </>
   )
 }
