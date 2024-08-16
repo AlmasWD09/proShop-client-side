@@ -12,6 +12,7 @@ const ProductCurd = ({ singleProduct }) => {
                     alt="avatar"
                     />
                     <div className="py-5 text-center">
+                        <p>{new Date(creationDate).toLocaleDateString()}</p>
                         <a href="#" className="block text-xl font-bold text-gray-800 dark:text-white" tabIndex={0} role="link">
                             {name}
                         </a>

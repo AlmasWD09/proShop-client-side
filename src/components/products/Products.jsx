@@ -10,14 +10,17 @@ const Products = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [count, setCount] = useState(0)
 
+    const [sortValue, setSortValue] = useState('')
+
+
     // get data by api
     useEffect(() => {
         const getData = async () => {
-            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products?page=${currentPage}&size=${itemsPerPage}`)
+            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products?page=${currentPage}&size=${itemsPerPage}&sort=${sortValue}`)
             setAllProducts(data)
         }
         getData()
-    }, [currentPage, itemsPerPage])
+    }, [currentPage,itemsPerPage,sortValue])
 
     // get count by api
     useEffect(() => {
@@ -51,13 +54,14 @@ const Products = () => {
                     {/* sort for data */}
                     <div>
                         <select
-                            value=''
                             name='sort'
                             id='sort'
+                            onChange={(e)=>setSortValue(e.target.value)}
                             className='border p-4 rounded-md'>
-                            <option value=''>Sort By Deadline</option>
-                            <option value='dsc'>Descending Order</option>
-                            <option value='asc'>Ascending Order</option>
+                            <option disabled value=''>Sort By Price</option>
+                            <option value='dsc'>High to Low</option>
+                            <option value='asc'>Low to High</option>
+                            <option value='date-added'>Date Added(Newest first)</option>
                         </select>
                     </div>
                 </div>
