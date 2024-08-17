@@ -4,7 +4,6 @@ import { TbBrandShopee } from "react-icons/tb";
 
 const Footer = () => {
 
-
     return (
         <>
             <div className=" bg-gray-50 dark:bg-slate-800 dark:text-white py-5 mt-10">

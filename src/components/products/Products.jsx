@@ -9,29 +9,31 @@ import LoadindSpenier from "../LoadindSpenier";
 const Products = () => {
     const { loading } = useAuth();
     const [allProducts, setAllProducts] = useState([]);
-    const [itemsPerPage, setItemPerPage] = useState(8);
+    const [itemsPerPage, setItemPerPage] = useState(5);
     const [currentPage, setCurrentPage] = useState(1);
     const [count, setCount] = useState(0);
     const [sortValue, setSortValue] = useState('');
+    const [categoryValue, setCategoryValue] = useState('');
     const [searchValue, setSearchValue] = useState('');
+    const [bandValue, setBandValue] = useState('');
 
     // get data by api
     useEffect(() => {
         const getData = async () => {
-            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products?page=${currentPage}&size=${itemsPerPage}&sort=${sortValue}&search=${searchValue}`)
+            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products?page=${currentPage}&size=${itemsPerPage}&sort=${sortValue}&search=${searchValue}&category=${categoryValue}&band=${bandValue}`)
             setAllProducts(data)
         }
         getData()
-    }, [currentPage, itemsPerPage, sortValue, searchValue])
+    }, [currentPage, itemsPerPage, sortValue, searchValue, categoryValue, bandValue])
 
     // get count by api
     useEffect(() => {
         const getCount = async () => {
-            const { data } = await axios(`${import.meta.env.VITE_API_URL}/counts?search=${searchValue}`)
+            const { data } = await axios(`${import.meta.env.VITE_API_URL}/counts?search=${searchValue}&category=${categoryValue}&band=${bandValue}`)
             setCount(data.count)
         }
         getCount()
-    }, [searchValue])
+    }, [searchValue, categoryValue, bandValue])
 
     // Handle search form submission
     const handleSearch = (e) => {
@@ -58,8 +60,36 @@ const Products = () => {
                 <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-10 gap-4 md:gap-0 md:px-24">
                     {/* filter by data */}
                     <div className="flex items-center gap-4">
-                        <button className="bg-gray-200 px-6 py-1 rounded">Brand</button>
-                        <button className="bg-gray-200 px-6 py-1 rounded">Category</button>
+                        <div>
+                            <select
+                                onChange={(e) => setBandValue(e.target.value)}
+                                name='band'
+                                id='band'
+                                className='border p-4 rounded-md'>
+                                <option disabled >Brand</option>
+                                <option value='teachPro'>TeachPro</option>
+                                <option value='cycleFit'>CycleFit</option>
+                                <option value='blendMaster'>BlendMaster</option>
+                                <option value='artistry'>Artistry</option>
+                                <option value='campSafe'>CampSafe</option>
+
+                            </select>
+                        </div>
+
+                        <div>
+                            <select
+                                onChange={(e) => setCategoryValue(e.target.value)}
+                                name='category'
+                                id='category'
+                                className='border p-4 rounded-md'>
+                                <option disabled >Category</option>
+                                <option value='electries'>Electries</option>
+                                <option value='fitness'>Fitness</option>
+                                <option value='home appliances'>Home Appliances</option>
+                                <option value='home goods'>Home Goods</option>
+                                <option value='outdoor'>Outdoor</option>
+                            </select>
+                        </div>
                         <button className="bg-gray-200 px-6 py-1 rounded">Price Range</button>
                     </div>
                     {/* search */}
@@ -146,8 +176,8 @@ const Products = () => {
                                     key={idx}
                                     onClick={() => handleChengeButton(btnNum)}
                                     className={`px-2 py-1 mx-1 text-sm sm:px-3 sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md ${currentPage === btnNum
-                                            ? 'bg-red-600 text-white'
-                                            : 'bg-white text-gray-700 dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400 hover:text-white'
+                                        ? 'bg-red-600 text-white'
+                                        : 'bg-white text-gray-700 dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400 hover:text-white'
                                         }`}
                                 >
                                     {btnNum}
