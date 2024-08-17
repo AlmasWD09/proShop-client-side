@@ -14,7 +14,7 @@ const Products = () => {
     const [count, setCount] = useState(0);
     const [sortValue, setSortValue] = useState('');
     const [searchValue, setSearchValue] = useState('');
- 
+
     // get data by api
     useEffect(() => {
         const getData = async () => {
@@ -22,7 +22,7 @@ const Products = () => {
             setAllProducts(data)
         }
         getData()
-    }, [currentPage, itemsPerPage, sortValue,searchValue])
+    }, [currentPage, itemsPerPage, sortValue, searchValue])
 
     // get count by api
     useEffect(() => {
@@ -33,11 +33,11 @@ const Products = () => {
         getCount()
     }, [searchValue])
 
- // Handle search form submission
- const handleSearch = (e) => {
-    e.preventDefault();
-    setSearchValue(e.target.search.value); 
-};
+    // Handle search form submission
+    const handleSearch = (e) => {
+        e.preventDefault();
+        setSearchValue(e.target.search.value);
+    };
 
 
     // const handle change button
@@ -50,12 +50,12 @@ const Products = () => {
     const numberOfPages = Math.ceil(count / itemsPerPage)
     const pages = [...Array(numberOfPages).keys()].map(element => element + 1)
 
-if(loading) return <LoadindSpenier />
+    if (loading) return <LoadindSpenier />
     return (
         <div>
             <Container>
                 <h1 className="text-2xl font-bold text-center">product here....</h1>
-                <div className="flex justify-between items-center mt-10">
+                <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-10 gap-4 md:gap-0 md:px-24">
                     {/* filter by data */}
                     <div className="flex items-center gap-4">
                         <button className="bg-gray-200 px-6 py-1 rounded">Brand</button>
@@ -70,7 +70,7 @@ if(loading) return <LoadindSpenier />
                                 type='text'
                                 name='search'
                                 placeholder='Enter category'
-                             
+
                             />
 
                             <button className='px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-primary rounded-md hover:bg-gray-600 focus:bg-primary focus:outline-none'>
@@ -97,7 +97,7 @@ if(loading) return <LoadindSpenier />
                     </div>
 
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 md:px-24">
                     {
                         allProducts.map((singleProduct, index) => {
                             return (
@@ -116,14 +116,14 @@ if(loading) return <LoadindSpenier />
                     <button
                         disabled={currentPage === 1}
                         onClick={() => handleChengeButton(currentPage - 1)}
-                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700 px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400  hover:text-white'
+                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700 px-2 py-1 mx-1 text-sm sm:px-3 sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md bg-white text-gray-700 hover:bg-primary hover:text-white'
                     >
                         <div className='flex items-center -mx-1'>
                             <span className='mx-1'>Previous</span>
 
                             <svg
                                 xmlns='http://www.w3.org/2000/svg'
-                                className='w-6 h-6 mx-1 rtl:-scale-x-100'
+                                className='hidden md:block w-6 h-6 mx-1 rtl:-scale-x-100'
                                 fill='none'
                                 viewBox='0 0 24 24'
                                 stroke='currentColor'
@@ -142,9 +142,16 @@ if(loading) return <LoadindSpenier />
                     {
                         pages.map((btnNum, idx) => {
                             return (
-                                <button key={idx}
+                                <button
+                                    key={idx}
                                     onClick={() => handleChengeButton(btnNum)}
-                                    className={currentPage === btnNum ? 'px-4 py-2 mx-1 text-white transition-colors duration-300 transform bg-red-600 rounded-md' : 'px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400  hover:text-white'}>{btnNum}</button>
+                                    className={`px-2 py-1 mx-1 text-sm sm:px-3 sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md ${currentPage === btnNum
+                                            ? 'bg-red-600 text-white'
+                                            : 'bg-white text-gray-700 dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400 hover:text-white'
+                                        }`}
+                                >
+                                    {btnNum}
+                                </button>
                             )
                         })
                     }
@@ -152,14 +159,14 @@ if(loading) return <LoadindSpenier />
                     <button
                         disabled={currentPage === numberOfPages}
                         onClick={() => handleChengeButton(currentPage + 1)}
-                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700 px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400  hover:text-white'
+                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700 px-2 py-1 mx-1 text-sm sm:px-3 sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md bg-white text-gray-700 hover:bg-primary hover:text-white'
                     >
                         <div className='flex items-center -mx-1'>
                             <span className='mx-1'>Next</span>
 
                             <svg
                                 xmlns='http://www.w3.org/2000/svg'
-                                className='w-6 h-6 mx-1 rtl:-scale-x-100'
+                                className='hidden md:block w-6 h-6 mx-1 rtl:-scale-x-100'
                                 fill='none'
                                 viewBox='0 0 24 24'
                                 stroke='currentColor'
