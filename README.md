@@ -1,8 +1,46 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# TechEm
 
-Currently, two official plugins are available:
+- [Live Site](url):https://scic-task-ten.web.app/
+- [server-site-github-link](url):https://github.com/AlmasWD09/proShope-server-side
+<br/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Overview
+(
+    proShop project are fully single page application and user friendly. user this project category wige sort, filter , search and pagination by all category. And first time user sign up and get category all data.
+)
+
+## wibsite features
+- user loging sistem
+- search by category or bandName
+- filter by bandName and category
+- sort by [high to low price/low to high price/date added(newest first)]
+
+  
+
+
+
+
+### Packages and api docs used in this project:
+- [IMGBB Api](https://api.imgbb.com/)
+- [@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query)
+- [axios](https://www.npmjs.com/package/axios)
+- [react-hot-toast](https://www.npmjs.com/package/react-hot-toast)
+- [react-icons](https://www.npmjs.com/package/react-icons)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [firebase](https://www.npmjs.com/package/firebase)
+
+## Clone repository Client-site (NEED)
+-[npm i]
+<br/>
+-[firebase_key setup]
+<br/>
+-[project start for------> npm run dev]
+
+## Clone repository Server-site (NEED)
+-[npm i]
+<br/>
+-[mongo db user create]
+<br/>
+-[project start for------> nodemon index.js]

@@ -16,24 +16,26 @@ const Products = () => {
     const [categoryValue, setCategoryValue] = useState('');
     const [searchValue, setSearchValue] = useState('');
     const [bandValue, setBandValue] = useState('');
+    const [rangeValue, setRangeValue] = useState(0);
+
 
     // get data by api
     useEffect(() => {
         const getData = async () => {
-            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products?page=${currentPage}&size=${itemsPerPage}&sort=${sortValue}&search=${searchValue}&category=${categoryValue}&band=${bandValue}`)
+            const { data } = await axios(`${import.meta.env.VITE_API_URL}/all-products?page=${currentPage}&size=${itemsPerPage}&sort=${sortValue}&search=${searchValue}&category=${categoryValue}&band=${bandValue}&range=${rangeValue}`)
             setAllProducts(data)
         }
         getData()
-    }, [currentPage, itemsPerPage, sortValue, searchValue, categoryValue, bandValue])
+    }, [currentPage, itemsPerPage, sortValue, searchValue, categoryValue, bandValue, rangeValue])
 
     // get count by api
     useEffect(() => {
         const getCount = async () => {
-            const { data } = await axios(`${import.meta.env.VITE_API_URL}/counts?search=${searchValue}&category=${categoryValue}&band=${bandValue}`)
+            const { data } = await axios(`${import.meta.env.VITE_API_URL}/counts?search=${searchValue}&category=${categoryValue}&band=${bandValue}&range=${rangeValue}`)
             setCount(data.count)
         }
         getCount()
-    }, [searchValue, categoryValue, bandValue])
+    }, [searchValue, categoryValue, bandValue, rangeValue])
 
     // Handle search form submission
     const handleSearch = (e) => {
@@ -58,8 +60,9 @@ const Products = () => {
             <Container>
                 <h1 className="text-2xl font-bold text-center">product here....</h1>
                 <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-10 gap-4 md:gap-0 md:px-24">
-                    {/* filter by data */}
+
                     <div className="flex items-center gap-4">
+                        {/* filter by band data */}
                         <div>
                             <select
                                 onChange={(e) => setBandValue(e.target.value)}
@@ -76,6 +79,7 @@ const Products = () => {
                             </select>
                         </div>
 
+                        {/* filter by category data */}
                         <div>
                             <select
                                 onChange={(e) => setCategoryValue(e.target.value)}
@@ -90,8 +94,22 @@ const Products = () => {
                                 <option value='outdoor'>Outdoor</option>
                             </select>
                         </div>
-                        <button className="bg-gray-200 px-6 py-1 rounded">Price Range</button>
+
+                        {/* range by price data */}
+                        <div>
+                            <h1 className="text-xl font-semibold">Price Range</h1>
+                            <input
+                                onChange={(e) => setRangeValue(e.target.value)}
+                                type="range" name="range" value={rangeValue} step={5} min={5} max={200} className={`w-full h-2 bg-gray-200 rounded-lg cursor-pointer 
+          ${rangeValue < 50 ? 'accent-green-500' : ''}
+          ${rangeValue >= 50 && rangeValue < 150 ? 'accent-yellow-500' : ''}
+          ${rangeValue >= 150 ? 'accent-red-500' : ''}`} />
+                            <h4 className="text-center font-bold">{rangeValue}</h4>
+                        </div>
                     </div>
+
+
+
                     {/* search */}
                     <form onSubmit={handleSearch}>
                         <div className='flex p-1 overflow-hidden border rounded-lg focus:outline-none  focus-within:ring focus-within:ring-opacity-40 focus-within:border-primary focus-within:ring-primary'>
