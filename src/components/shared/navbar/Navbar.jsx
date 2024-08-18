@@ -14,6 +14,8 @@ const Navbar = () => {
   const handleClick = () => {
     setLogOutButton(!logOutButton)
   }
+
+  
   return (
     <nav className="w-full bg-white shadow dark:bg-gray-800 py-4  fixed">
       <div className="container px-6 py-3 mx-auto md:flex">

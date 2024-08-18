@@ -1,10 +1,21 @@
+import { RotatingTriangles } from "react-loader-spinner";
+
+
 
 
 const LoadindSpenier = () => {
     return (
         <div className="h-screen flex justify-center items-center">
-                <h1 className="text-primary text-5xl font-bold">Loading....</h1>
-            </div>
+            <RotatingTriangles
+                visible={true}
+                height="80"
+                width="80"
+                color={['#1B5299', '#EF8354', '#DB5461']}
+                ariaLabel="rotating-triangles-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+            />
+        </div>
     );
 };
 

@@ -1,0 +1,103 @@
+[
+    {
+      "name": "CycleFit Yoga Mat Pro",
+      "image": "https://example.com/images/yoga-mat-pro.jpg",
+      "description": "A premium yoga mat with extra cushioning and non-slip surface.",
+      "price": 49.99,
+      "category":"Fitness",
+      "ratings": 4.8,
+      "creationDate": "2024-08-18T10:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Resistance Bands Set",
+      "image": "https://example.com/images/resistance-bands.jpg",
+      "description": "A set of durable resistance bands for strength training and flexibility.",
+      "price": 29.99,
+      "category":"Fitness",
+      "ratings": 4.7,
+      "creationDate": "2024-08-18T09:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Dumbbell Pair 10kg",
+      "image": "https://example.com/images/dumbbell-pair.jpg",
+      "description": "A pair of 10kg dumbbells with ergonomic grip and balanced weight.",
+      "price": 59.99,
+      "category":"Fitness",
+      "ratings": 4.6,
+      "creationDate": "2024-08-18T08:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Treadmill X2",
+      "image": "https://example.com/images/treadmill-x2.jpg",
+      "description": "A foldable treadmill with multiple speed settings and heart rate monitor.",
+      "price": 699.99,
+      "category":"Fitness",
+      "ratings": 4.5,
+      "creationDate": "2024-08-18T07:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Adjustable Kettlebell",
+      "image": "https://example.com/images/kettlebell.jpg",
+      "description": "An adjustable kettlebell with variable weights for versatile workouts.",
+      "price": 79.99,
+      "category":"Fitness",
+      "ratings": 4.4,
+      "creationDate": "2024-08-18T06:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Rowing Machine R1",
+      "image": "https://example.com/images/rowing-machine.jpg",
+      "description": "A rowing machine with adjustable resistance and digital display.",
+      "price": 499.99,
+      "category":"Fitness",
+      "ratings": 4.7,
+      "creationDate": "2024-08-18T05:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Exercise Ball",
+      "image": "https://example.com/images/exercise-ball.jpg",
+      "description": "A stability ball for core strengthening and balance exercises.",
+      "price": 19.99,
+      "category":"Fitness",
+      "ratings": 4.3,
+      "creationDate": "2024-08-18T04:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Foam Roller",
+      "image": "https://example.com/images/foam-roller.jpg",
+      "description": "A high-density foam roller for muscle recovery and massage.",
+      "price": 24.99,
+      "category":"Fitness",
+      "ratings": 4.6,
+      "creationDate": "2024-08-18T03:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Adjustable Bench",
+      "image": "https://example.com/images/adjustable-bench.jpg",
+      "description": "An adjustable bench for various strength training exercises.",
+      "price": 159.99,
+      "category":"Fitness",
+      "ratings": 4.5,
+      "creationDate": "2024-08-18T02:00:00Z",
+      "bandName": "CycleFit"
+    },
+    {
+      "name": "CycleFit Pull-Up Bar",
+      "image": "https://example.com/images/pull-up-bar.jpg",
+      "description": "A door-mounted pull-up bar for upper body strength training.",
+      "price": 39.99,
+      "category":"Fitness",
+      "ratings": 4.4,
+      "creationDate": "2024-08-18T01:00:00Z",
+      "bandName": "CycleFit"
+    }
+  ]
+  

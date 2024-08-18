@@ -4,6 +4,7 @@ import ProductCurd from "./ProductCurd";
 import axios from "axios";
 import useAuth from "../../hooks/useAuth";
 import LoadindSpenier from "../LoadindSpenier";
+import { FcSearch } from "react-icons/fc";
 
 
 const Products = () => {
@@ -37,13 +38,7 @@ const Products = () => {
         getCount()
     }, [searchValue, categoryValue, bandValue, rangeValue])
 
-    // Handle search form submission
-    const handleSearch = (e) => {
-        e.preventDefault();
-        setSearchValue(e.target.search.value);
-    };
-
-
+   
     // const handle change button
     const handleChengeButton = (value) => {
         setCurrentPage(value)
@@ -56,9 +51,9 @@ const Products = () => {
 
     if (loading) return <LoadindSpenier />
     return (
-        <div>
+        <div className="pt-36">
             <Container>
-                <h1 className="text-2xl font-bold text-center">product here....</h1>
+                <h1 className="text-2xl font-bold text-center">Our Shop Category</h1>
                 <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-10 gap-4 md:gap-0 md:px-24">
 
                     <div className="flex items-center gap-4">
@@ -101,9 +96,9 @@ const Products = () => {
                             <input
                                 onChange={(e) => setRangeValue(e.target.value)}
                                 type="range" name="range" value={rangeValue} step={5} min={5} max={200} className={`w-full h-2 bg-gray-200 rounded-lg cursor-pointer 
-          ${rangeValue < 50 ? 'accent-green-500' : ''}
-          ${rangeValue >= 50 && rangeValue < 150 ? 'accent-yellow-500' : ''}
-          ${rangeValue >= 150 ? 'accent-red-500' : ''}`} />
+                                ${rangeValue < 50 ? 'accent-green-500' : ''}
+                                ${rangeValue >= 50 && rangeValue < 150 ? 'accent-yellow-500' : ''}
+                                ${rangeValue >= 150 ? 'accent-red-500' : ''}`} />
                             <h4 className="text-center font-bold">{rangeValue}</h4>
                         </div>
                     </div>
@@ -111,19 +106,17 @@ const Products = () => {
 
 
                     {/* search */}
-                    <form onSubmit={handleSearch}>
-                        <div className='flex p-1 overflow-hidden border rounded-lg focus:outline-none  focus-within:ring focus-within:ring-opacity-40 focus-within:border-primary focus-within:ring-primary'>
+                    <form >
+                        <div className='relative flex p-1 overflow-hidden border rounded-lg focus:outline-none  focus-within:ring focus-within:ring-opacity-40 focus-within:border-primary focus-within:ring-primary'>
                             <input
-                                className='px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent'
+                                className='px-10 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent'
                                 type='text'
                                 name='search'
-                                placeholder='Enter category'
-
+                                value={searchValue}
+                                onChange={(e)=>setSearchValue(e.target.value)}
+                                placeholder='Search Category'
                             />
-
-                            <button className='px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-primary rounded-md hover:bg-gray-600 focus:bg-primary focus:outline-none'>
-                                Search
-                            </button>
+                            <span><FcSearch className="absolute text-3xl text-gray-300 left-2 top-[20%]" /></span>
                         </div>
                     </form>
 

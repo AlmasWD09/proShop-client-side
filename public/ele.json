@@ -1,0 +1,83 @@
+[
+    {
+      "name": "Smartphone X100",
+      "image": "https://example.com/images/smartphone-x100.jpg",
+      "description": "A high-performance smartphone with an advanced camera system.",
+      "price": 799.99,
+      "category": "Electronics",
+      "ratings": 4.5,
+      "creationDate": "2024-08-18T10:00:00Z",
+      "bandName": "TeachPro"
+    },
+    {
+      "name": "TeachPro Laptop Z5",
+      "image": "https://example.com/images/laptop-z5.jpg",
+      "description": "A powerful laptop with a sleek design, ideal for professionals.",
+      "price": 1299.99,
+      "category": "Electronics",
+      "ratings": 4.7,
+      "creationDate": "2024-08-18T09:00:00Z",
+      "bandName": "TeachPro"
+    },
+    {
+      "name": "TeachPro Bluetooth Earbuds",
+      "image": "https://example.com/images/earbuds.jpg",
+      "description": "Wireless earbuds with superior sound quality and noise cancellation.",
+      "price": 149.99,
+      "category": "Electronics",
+      "ratings": 4.6,
+      "creationDate": "2024-08-18T08:00:00Z",
+      "bandName": "TeachPro"
+    },
+    {
+      "name": "TeachPro Smartwatch 4",
+      "image": "https://example.com/images/smartwatch-4.jpg",
+      "description": "A smartwatch with health tracking and long battery life.",
+      "price": 199.99,
+      "category": "Electronics",
+      "ratings": 4.4,
+      "creationDate": "2024-08-18T07:00:00Z",
+      "bandName": "TeachPro"
+    },
+    {
+      "name": "TeachPro 4K Smart TV",
+      "image": "https://example.com/images/4k-tv.jpg",
+      "description": "A 55-inch 4K UHD smart TV with HDR support.",
+      "price": 699.99,
+      "category": "Electronics",
+      "ratings": 4.8,
+      "creationDate": "2024-08-18T06:00:00Z",
+      "bandName": "TeachPro"
+    },
+    {
+      "name": "TeachPro Gaming Console V2",
+      "image": "https://example.com/images/console-v2.jpg",
+      "description": "A next-gen gaming console with immersive graphics and fast loading times.",
+      "price": 499.99,
+      "category": "Electronics",
+      "ratings": 4.9,
+      "creationDate": "2024-08-18T05:00:00Z",
+      "bandName": "TeachPro"
+    },
+    {
+      "name": "TeachPro Wireless Router Max",
+      "image": "https://example.com/images/router-max.jpg",
+      "description": "A high-speed wireless router with wide coverage and multiple device support.",
+      "price": 129.99,
+      "category": "Electronics",
+      "ratings": 4.3,
+      "creationDate": "2024-08-18T04:00:00Z",
+      "bandName": "TeachPro"
+    },
+    {
+      "name": "TeachPro Home Assistant Hub",
+      "image": "https://example.com/images/home-assistant.jpg",
+      "description": "A smart home assistant with voice control and automation features.",
+      "price": 249.99,
+      "category": "Electronics",
+      "ratings": 4.5,
+      "creationDate": "2024-08-18T03:00:00Z",
+      "bandName": "TeachPro"
+    }
+  ]
+  
