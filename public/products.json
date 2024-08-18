@@ -1,494 +1,461 @@
 [
     {
-        "name": "Classic Watch",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "A timeless classic watch with a leather strap.",
-        "price": 120.99,
-        "category": "Accessories",
+        "name": "Smartphone X100",
+        "image": "https://i.ibb.co/KmW94hY/electrices01.webp",
+        "description": "A high-performance smartphone with an advanced camera system.",
+        "price": 799.99,
+        "category": "Electronics",
         "ratings": 4.5,
-        "creationDate": "2024-08-01T08:30:00Z",
-        "bandName": "Timeless"
-    },
-    {
-        "name": "Smartphone X200",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Latest smartphone with high-resolution display and fast processor.",
+        "creationDate": "2024-08-18T10:00:00Z",
+        "bandName": "TeachPro"
+      },
+      {
+        "name": "CycleFit Yoga Mat Pro",
+        "image": "https://i.ibb.co/njnB2wK/fitness01.webp",
+        "description": "A premium yoga mat with extra cushioning and non-slip surface.",
+        "price": 49.99,
+        "category":"Fitness",
+        "ratings": 4.8,
+        "creationDate": "2024-08-18T10:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "BlendMaster Smart Blender",
+        "image":"https://i.ibb.co/MPGFXc8/blender01.webp",
+        "description": "A smart blender with multiple speed settings and pre-programmed recipes.",
+        "price": 149.99,
+        "category":"Home Appliances",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T10:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "Artistry Elegant Vase",
+        "image":"https://i.ibb.co/2sq17xL/airtist01.jpg",
+        "description": "A beautifully designed ceramic vase perfect for any home decor.",
+        "price": 49.99,
+        "category":"Home Goods",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T10:00:00Z",
+        "bandName": "Artistry"
+      },
+      {
+        "name": "CampSafe Portable Tent",
+        "image":"https://i.ibb.co/M8T94CG/outdor01.jpg",
+        "description": "A compact and easy-to-set-up portable tent ideal for camping trips.",
+        "price": 89.99,
+        "category":"Outdoor",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T10:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "TeachPro Laptop Z5",
+        "image": "https://i.ibb.co/QDWfCp1/electrices02.webp",
+        "description": "A powerful laptop with a sleek design, ideal for professionals.",
+        "price": 1299.99,
+        "category": "Electronics",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T09:00:00Z",
+        "bandName": "TeachPro"
+      },
+      {
+        "name": "TeachPro Bluetooth Earbuds",
+        "image": "https://i.ibb.co/2c1gtwg/electrices03.webp",
+        "description": "Wireless earbuds with superior sound quality and noise cancellation.",
+        "price": 149.99,
+        "category": "Electronics",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T08:00:00Z",
+        "bandName": "TeachPro"
+      },
+      {
+        "name": "TeachPro Smartwatch 4",
+        "image": "https://i.ibb.co/4MRRYKN/electrices04.webp",
+        "description": "A smartwatch with health tracking and long battery life.",
+        "price": 199.99,
+        "category": "Electronics",
+        "ratings": 4.4,
+        "creationDate": "2024-08-18T07:00:00Z",
+        "bandName": "TeachPro"
+      },
+      {
+        "name": "CycleFit Resistance Bands Set",
+        "image": "https://i.ibb.co/m62Yhjm/fitness02.webp",
+        "description": "A set of durable resistance bands for strength training and flexibility.",
+        "price": 29.99,
+        "category":"Fitness",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T09:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "CycleFit Dumbbell Pair 10kg",
+        "image": "https://i.ibb.co/s51q0Dn/fitness03.webp",
+        "description": "A pair of 10kg dumbbells with ergonomic grip and balanced weight.",
+        "price": 59.99,
+        "category":"Fitness",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T08:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "CycleFit Treadmill X2",
+        "image": "https://i.ibb.co/8PXGpR6/fitness04.webp",
+        "description": "A foldable treadmill with multiple speed settings and heart rate monitor.",
+        "price": 699.99,
+        "category":"Fitness",
+        "ratings": 4.5,
+        "creationDate": "2024-08-18T07:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "BlendMaster Coffee Maker 2.0",
+        "image":"https://i.ibb.co/yhFjwnT/blender02.webp",
+        "description": "A programmable coffee maker with a built-in grinder and auto-brew feature.",
+        "price": 99.99,
+        "category":"Home Appliances",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T09:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "BlendMaster Air Fryer Pro",
+        "image":"https://i.ibb.co/JrPFWS1/blender03.webp",
+        "description": "An air fryer with adjustable temperature settings and a large capacity basket.",
+        "price": 129.99,
+        "category":"Home Appliances",
+        "ratings": 4.8,
+        "creationDate": "2024-08-18T08:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "BlendMaster Electric Kettle",
+        "image":"https://i.ibb.co/X2WHpKg/blender04.webp",
+        "description": "A fast-boiling electric kettle with an automatic shut-off feature.",
+        "price": 39.99,
+        "category":"Home Appliances",
+        "ratings": 4.5,
+        "creationDate": "2024-08-18T07:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "Artistry Plush Throw Blanket",
+        "image":"https://i.ibb.co/j8Px9CP/airtist02.jpg",
+        "description": "A soft and cozy throw blanket made from high-quality, breathable fabric.",
+        "price": 39.99,
+        "category":"Home Goods",
+        "ratings": 4.8,
+        "creationDate": "2024-08-18T09:00:00Z",
+        "bandName": "Artistry"
+      },
+      {
+        "name": "Artistry Handcrafted Coffee Table",
+        "image":"https://i.ibb.co/7tWjZ0V/airtist03.jpg",
+        "description": "A handcrafted coffee table with a rustic finish and modern design.",
+        "price": 199.99,
+        "category":"Home Goods",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T08:00:00Z",
+        "bandName": "Artistry"
+      },
+      {
+        "name": "Artistry Luxury Bedding Set",
+        "image":"https://i.ibb.co/Chv75bD/airtist04.jpg",
+        "description": "A luxury bedding set including sheets, pillowcases, and a duvet cover.",
+        "price": 129.99,
+        "category":"Home Goods",
+        "ratings": 4.9,
+        "creationDate": "2024-08-18T07:00:00Z",
+        "bandName": "Artistry"
+      },
+      {
+        "name": "CampSafe Folding Camp Chair",
+        "image":"https://i.ibb.co/gRWW5sR/outdor02.jpg",
+        "description": "A comfortable and durable folding camp chair with built-in cup holder.",
+        "price": 39.99,
+        "category":"Outdoor",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T09:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "CampSafe Sleeping Bag",
+        "image":"https://i.ibb.co/QnVN48j/outdor03.jpg",
+        "description": "A lightweight sleeping bag with excellent insulation for cold weather camping.",
+        "price": 69.99,
+        "category":"Outdoor",
+        "ratings": 4.8,
+        "creationDate": "2024-08-18T08:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "CampSafe Portable Stove",
+        "image":"https://i.ibb.co/x6PT81p/outdor04.jpg",
+        "description": "A compact portable stove with adjustable flame control for outdoor cooking.",
+        "price": 59.99,
+        "category":"Outdoor",
+        "ratings": 4.5,
+        "creationDate": "2024-08-18T07:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "TeachPro 4K Smart TV",
+        "image": "https://i.ibb.co/7nQF8PK/electrices05.webp",
+        "description": "A 55-inch 4K UHD smart TV with HDR support.",
         "price": 699.99,
         "category": "Electronics",
         "ratings": 4.8,
-        "creationDate": "2024-08-02T09:15:00Z",
-        "bandName": "TechPro"
-    },
-    {
-        "name": "Blacoo and maottle",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping tent  cover.",
-        "price": 149.99,
-        "category": "Outdoor",
-        "ratings": 4.6,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Gaming Laptop Pro",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-performance gaming laptop with a powerful GPU.",
-        "price": 1499.99,
-        "category": "Computers",
-        "ratings": 4.7,
-        "creationDate": "2024-08-03T10:45:00Z",
-        "bandName": "GamerMax"
-    },
-    {
-        "name": "Running Shoes",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Comfortable running shoes with breathable material.",
-        "price": 89.99,
-        "category": "Footwear",
-        "ratings": 4.3,
-        "creationDate": "2024-08-04T11:30:00Z",
-        "bandName": "SportX"
-    },
-    {
-        "name": "moddt and luzax",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping tent with wrrated and protle cover.",
-        "price": 145.99,
-        "category": "Outdoor",
-        "ratings": 4.6,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Bluetooth Headphones",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Wireless headphones with noise-cancellation feature.",
-        "price": 129.99,
-        "category": "Electronics",
-        "ratings": 4.6,
-        "creationDate": "2024-08-05T12:00:00Z",
-        "bandName": "TechPro"
-    },
-    {
-        "name": "Canvas and Huross",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Beautiful canvas art  decoration.",
-        "price": 85.99,
-        "category": "Home Goods",
-        "ratings": 4.4,
-        "creationDate": "2024-08-21T12:30:00Z",
-        "bandName": "Artistry"
-    },
-    {
-        "name": "Leather Jacket",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Stylish leather jacket perfect for any season.",
-        "price": 199.99,
-        "category": "Apparel",
-        "ratings": 4.4,
-        "creationDate": "2024-08-06T13:10:00Z",
-        "bandName": "UrbanEdge"
-    },
-    {
-        "name": "Smartwatch Series 5",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Advanced smartwatch with fitness tracking and notifications.",
-        "price": 249.99,
-        "category": "Accessories",
-        "ratings": 4.7,
-        "creationDate": "2024-08-07T14:20:00Z",
-        "bandName": "FitTrack"
-    },
-    {
-        "name": "Electric Toothbrush",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Efficient electric toothbrush with multiple brushing modes.",
-        "price": 79.99,
-        "category": "Personal Care",
-        "ratings": 4.2,
-        "creationDate": "2024-08-08T15:00:00Z",
-        "bandName": "BrightSmile"
-    },
-    {
-        "name": "Outdoor and prootdle",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Comprositon and  tent with waterproof cover.",
-        "price": 149.99,
-        "category": "Outdoor",
-        "ratings": 4.6,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Yoya lapos",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-quality yoga mat with non-slip surface.",
-        "price": 33.99,
-        "category": "Fitness",
-        "ratings": 4.5,
-        "creationDate": "2024-08-10T17:45:00Z",
-        "bandName": "CycleFit"
-    },
-    {
-        "name": "4K TV 55 Inch",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "55-inch 4K Ultra HD TV with smart features.",
-        "price": 799.99,
-        "category": "Electronics",
-        "ratings": 4.9,
-        "creationDate": "2024-08-09T16:30:00Z",
-        "bandName": "TechPro"
-    },
-    {
-        "name": "Cottle and perrty",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Beautiful canvas art print for home decoration.",
-        "price": 99.99,
-        "category": "Home Goods",
-        "ratings": 4.2,
-        "creationDate": "2024-08-21T12:30:00Z",
-        "bandName": "Artistry"
-    },
-    {
-        "name": "Yoga Mat",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-quality yoga mat with non-slip surface.",
-        "price": 39.99,
-        "category": "Fitness",
-        "ratings": 4.1,
-        "creationDate": "2024-08-10T17:45:00Z",
-        "bandName": "CycleFit"
-    },
-    {
-        "name": "Digital Camera",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Compact digital camera with high-resolution sensor.",
-        "price": 349.99,
-        "category": "Electronics",
-        "ratings": 4.6,
-        "creationDate": "2024-08-11T18:20:00Z",
-        "bandName": "TechPro"
-    },
-    {
-        "name": "Camping Tent",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping tent with waterproof cover.",
-        "price": 145.99,
-        "category": "Outdoor",
-        "ratings": 4.2,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Forest Guridy",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-quality forest guridy mat with non-slip surface.",
-        "price": 38.99,
-        "category": "Fitness",
-        "ratings": 4.1,
-        "creationDate": "2024-08-10T17:45:00Z",
-        "bandName": "CycleFit"
-    },
-    {
-        "name": "Coffee Maker",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Coffee maker with programmable settings and auto shutoff.",
-        "price": 59.99,
-        "category": "Home Appliances",
-        "ratings": 4.3,
-        "creationDate": "2024-08-12T19:00:00Z",
-        "bandName": "BlendMaster"
-    },
-    {
-        "name": "Smart TV Remote",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Universal smart TV remote with voice control.",
-        "price": 39.99,
-        "category": "Electronics",
-        "ratings": 4.0,
-        "creationDate": "2024-08-13T20:30:00Z",
-        "bandName": "TechPro"
-    },
-    {
-        "name": "Home Exercise Bike",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Sturdy exercise bike for home workouts with adjustable resistance.",
-        "price": 299.99,
-        "category": "Fitness",
-        "ratings": 4.5,
-        "creationDate": "2024-08-14T21:15:00Z",
-        "bandName": "CycleFit"
-    },
-    {
-        "name": "Wool Blanket",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Soft wool blanket for cozy nights.",
-        "price": 89.99,
-        "category": "Home Goods",
-        "ratings": 4.4,
-        "creationDate": "2024-08-15T22:00:00Z",
-        "bandName": "Artistry"
-    },
-    {
-        "name": "Montet and proklke",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping tent with waterproof cover.",
-        "price": 18.99,
-        "category": "Outdoor",
-        "ratings": 4.2,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Camping Tent",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping tent with waterproof cover.",
-        "price": 149.99,
-        "category": "Outdoor",
-        "ratings": 4.6,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Electric Kettle",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Fast boiling electric kettle with auto shutoff feature.",
-        "price": 29.99,
-        "category": "Home Appliances",
-        "ratings": 4.2,
-        "creationDate": "2024-08-17T08:00:00Z",
-        "bandName": "BlendMaster"
-    },
-    {
-        "name": "Bookshelf",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Wooden bookshelf with adjustable shelves.",
-        "price": 119.99,
-        "category": "Furniture",
-        "ratings": 4.5,
-        "creationDate": "2024-08-18T09:30:00Z",
-        "bandName": "ShelfMaster"
-    },
-    {
-        "name": "Camping Tenssdt",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping tent with waterproof cover.",
-        "price": 149.9,
-        "category": "Outdoor",
-        "ratings": 2.6,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Yoga and fogri",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-quality yoga mat surface and take care.",
-        "price": 38.99,
-        "category": "Fitness",
-        "ratings": 4.1,
-        "creationDate": "2024-08-10T17:45:00Z",
-        "bandName": "CycleFit"
-    },
-    {
-        "name": "otldet and prokkle",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping twaterproof cover.",
-        "price": 189.99,
-        "category": "Outdoor",
-        "ratings": 4.5,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Desk Lamp",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Modern desk lamp with adjustable brightness.",
-        "price": 49.99,
-        "category": "Home Goods",
-        "ratings": 4.3,
-        "creationDate": "2024-08-19T10:15:00Z",
-        "bandName": "Artistry"
-    },
-    {
-        "name": "Blender",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Powerful blender with multiple speed settings.",
-        "price": 79.99,
-        "category": "Home Appliances",
-        "ratings": 4.4,
-        "creationDate": "2024-08-20T11:00:00Z",
-        "bandName": "BlendMaster"
-    },
-    {
-        "name": "Canvas Art Print",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Beautiful canvas art print for home decoration.",
-        "price": 89.99,
-        "category": "Home Goods",
-        "ratings": 4.7,
-        "creationDate": "2024-08-21T12:30:00Z",
-        "bandName": "Artistry"
-    },
-    {
-        "name": "paroka and jaky",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping tent with waterproof cover.",
-        "price": 145.99,
-        "category": "Outdoor",
-        "ratings": 4.5,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Camping eleven",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable camping tent with waterproof cover.",
-        "price": 189.99,
-        "category": "Outdoor",
-        "ratings": 4.8,
-        "creationDate": "2024-08-16T23:45:00Z",
-        "bandName": "CampSafe"
-    },
-    {
-        "name": "Canvas and Prrit",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Beautiful canvas art print for home decoration.",
-        "price": 82.99,
-        "category": "Home Goods",
-        "ratings": 4.7,
-        "creationDate": "2024-08-21T12:30:00Z",
-        "bandName": "Artistry"
-    },
-    {
-        "name": "Electric Scooter",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Eco-friendly electric scooter with long battery life.",
-        "price": 349.99,
-        "category": "Transportation",
-        "ratings": 4.6,
-        "creationDate": "2024-08-22T13:45:00Z",
-        "bandName": "EcoRide"
-    },
-    {
-        "name": "Waterproof Backpack",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Waterproof backpack with multiple compartments.",
-        "price": 59.99,
-        "category": "Accessories",
-        "ratings": 4.3,
-        "creationDate": "2024-08-23T14:20:00Z",
-        "bandName": "PackSafe"
-    },
-    {
-        "name": "Yoga hoats",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-quality yoga mat fill and find.",
-        "price": 39.99,
-        "category": "Fitness",
-        "ratings": 4.1,
-        "creationDate": "2024-08-10T17:45:00Z",
-        "bandName": "CycleFit"
-    },
-    {
-        "name": "Tablet Pro 10.5",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "10.5-inch tablet with high-definition display and fast processor.",
+        "creationDate": "2024-08-18T06:00:00Z",
+        "bandName": "TeachPro"
+      },
+      {
+        "name": "TeachPro Gaming Console V2",
+        "image": "https://i.ibb.co/NLzcvDr/electrices06.webp",
+        "description": "A next-gen gaming console with immersive graphics and fast loading times.",
         "price": 499.99,
         "category": "Electronics",
-        "ratings": 4.8,
-        "creationDate": "2024-08-24T15:00:00Z",
-        "bandName": "TechPro"
-    },
-    {
-        "name": "Stainless Steel Cookware Set",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Durable stainless steel cookware set with non-stick coating.",
-        "price": 129.99,
-        "category": "Kitchen",
-        "ratings": 4.5,
-        "creationDate": "2024-08-25T16:30:00Z",
-        "bandName": "ChefPro"
-    },
-    {
-        "name": "Air Purilly",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-efficiency air purifier with quiet operation.",
-        "price": 104.99,
-        "category": "Home Appliances",
         "ratings": 4.9,
-        "creationDate": "2024-08-30T21:15:00Z",
-        "bandName": "BlendMaster"
-    },
-    {
-        "name": "Portable Charger",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Compact portable charger with fast charging capability.",
-        "price": 39.99,
+        "creationDate": "2024-08-18T05:00:00Z",
+        "bandName": "TeachPro"
+      },
+      {
+        "name": "TeachPro Wireless Router Max",
+        "image": "https://i.ibb.co/hBjSvzW/electrices07.webp",
+        "description": "A high-speed wireless router with wide coverage and multiple device support.",
+        "price": 129.99,
         "category": "Electronics",
-        "ratings": 4.4,
-        "creationDate": "2024-08-26T17:45:00Z",
-        "bandName": "TechPro"
-    },
-    {
-        "name": "Yoga Moolt",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-quality yoga mat with non-slip surface.",
-        "price": 39.99,
-        "category": "Fitness",
-        "ratings": 4.1,
-        "creationDate": "2024-08-10T17:45:00Z",
-        "bandName": "CycleFit"
-    },
-    {
-        "name": "Yoga fonlt",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-quality yoga mat with non-slip surface about still.",
-        "price": 38.99,
-        "category": "Fitness",
-        "ratings": 4.8,
-        "creationDate": "2024-08-10T17:45:00Z",
-        "bandName": "CycleFit"
-    },
-    {
-        "name": "Electric Shaver",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Rechargeable electric shaver with precision blades.",
-        "price": 59.99,
-        "category": "Personal Care",
         "ratings": 4.3,
-        "creationDate": "2024-08-27T18:00:00Z",
-        "bandName": "ShaveMaster"
-    },
-    {
-        "name": "Office Chair",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Ergonomic office chair with lumbar support.",
-        "price": 199.99,
-        "category": "Furniture",
-        "ratings": 4.6,
-        "creationDate": "2024-08-28T19:30:00Z",
-        "bandName": "ComfortSeat"
-    },
-    {
-        "name": "Air Purifier",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "High-efficiency air purifier with quiet operation.",
-        "price": 149.99,
-        "category": "Home Appliances",
+        "creationDate": "2024-08-18T04:00:00Z",
+        "bandName": "TeachPro"
+      },
+      {
+        "name": "TeachPro Home Assistant Hub",
+        "image": "https://i.ibb.co/52pKRzQ/electrices08.webp",
+        "description": "A smart home assistant with voice control and automation features.",
+        "price": 249.99,
+        "category": "Electronics",
         "ratings": 4.5,
-        "creationDate": "2024-08-30T21:15:00Z",
-        "bandName": "BlendMaster"
-    },
-    {
-        "name": "Leather Wallet",
-        "image": "https://ibb.co/N10BzRb",
-        "description": "Genuine leather wallet with multiple card slots.",
+        "creationDate": "2024-08-18T03:00:00Z",
+        "bandName": "TeachPro"
+      },
+      {
+        "name": "CycleFit Adjustable Kettlebell",
+        "image": "https://i.ibb.co/vHjtcrP/fitness05.webp",
+        "description": "An adjustable kettlebell with variable weights for versatile workouts.",
+        "price": 79.99,
+        "category":"Fitness",
+        "ratings": 4.4,
+        "creationDate": "2024-08-18T06:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "CycleFit Rowing Machine R1",
+        "image": "https://i.ibb.co/QjKwjZG/fitness06.webp",
+        "description": "A rowing machine with adjustable resistance and digital display.",
+        "price": 499.99,
+        "category":"Fitness",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T05:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "CycleFit Exercise Ball",
+        "image": "https://i.ibb.co/X2vRn2r/fitness07.webp",
+        "description": "A stability ball for core strengthening and balance exercises.",
+        "price": 19.99,
+        "category":"Fitness",
+        "ratings": 4.3,
+        "creationDate": "2024-08-18T04:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "CycleFit Foam Roller",
+        "image": "https://i.ibb.co/RN1kSvY/fitness08.webp",
+        "description": "A high-density foam roller for muscle recovery and massage.",
+        "price": 24.99,
+        "category":"Fitness",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T03:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "CycleFit Adjustable Bench",
+        "image": "https://i.ibb.co/B6qyY4r/fitness09.webp",
+        "description": "An adjustable bench for various strength training exercises.",
+        "price": 159.99,
+        "category":"Fitness",
+        "ratings": 4.5,
+        "creationDate": "2024-08-18T02:00:00Z",
+        "bandName": "CycleFit"
+      },
+      {
+        "name": "CycleFit Pull-Up Bar",
+        "image": "https://example.com/images/pull-up-bar.jpg",
+        "description": "A door-mounted pull-up bar for upper body strength training.",
         "price": 39.99,
-        "category": "Accessories",
-        "ratings": 4.2,
-        "creationDate": "2024-08-31T22:00:00Z",
-        "bandName": "ClassicHold"
-    },
-
-  ]
-  
+        "category":"Fitness",
+        "ratings": 4.4,
+        "creationDate": "2024-08-18T01:00:00Z",
+        "bandName": "CycleFit"
+      },{
+        "name": "BlendMaster Toaster Oven",
+        "image":"https://i.ibb.co/r2d20P2/blender05.webp",
+        "description": "A versatile toaster oven with convection cooking and multiple toast settings.",
+        "price": 89.99,
+        "category":"Home Appliances",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T06:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "BlendMaster Stand Mixer",
+        "image":"https://i.ibb.co/dDnfPZt/blender06.webp",
+        "description": "A powerful stand mixer with multiple speed settings and a range of attachments.",
+        "price": 199.99,
+        "category":"Home Appliances",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T05:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "BlendMaster Food Processor",
+        "image":"https://i.ibb.co/9NDKLrf/blender07.webp",
+        "description": "A multi-functional food processor with slicing, dicing, and chopping capabilities.",
+        "price": 149.99,
+        "category":"Home Appliances",
+        "ratings": 4.4,
+        "creationDate": "2024-08-18T04:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "BlendMaster Slow Cooker",
+        "image":"https://i.ibb.co/QYymDhP/blender08.webp",
+        "description": "A programmable slow cooker with a removable ceramic pot for easy cleaning.",
+        "price": 69.99,
+        "category":"Home Appliances",
+        "ratings": 4.5,
+        "creationDate": "2024-08-18T03:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "BlendMaster Vacuum Cleaner",
+        "image":"https://i.ibb.co/vVpgRCf/blender09.webp",
+        "description": "A lightweight vacuum cleaner with strong suction and HEPA filtration.",
+        "price": 119.99,
+        "category":"Home Appliances",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T02:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "BlendMaster Ice Cream Maker",
+        "image":"https://i.ibb.co/QHZ1ttF/blender10.webp",
+        "description": "An ice cream maker with a built-in compressor and multiple flavor settings.",
+        "price": 179.99,
+        "category":"Home Appliances",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T01:00:00Z",
+        "bandName": "BlendMaster"
+      },
+      {
+        "name": "Artistry Modern Wall Art",
+        "image":"https://i.ibb.co/Fsch53b/airtist05.jpg",
+        "description": "A striking piece of modern wall art to enhance any living space.",
+        "price": 89.99,
+        "category":"Home Goods",
+        "ratings": 4.5,
+        "creationDate": "2024-08-18T06:00:00Z",
+        "bandName": "Artistry"
+      },
+      {
+        "name": "Artistry Stylish Floor Lamp",
+        "image":"https://i.ibb.co/RBkxC77/airtist06.jpg",
+        "description": "A sleek and stylish floor lamp with adjustable brightness settings.",
+        "price": 119.99,
+        "category":"Home Goods",
+        "ratings": 4.4,
+        "creationDate": "2024-08-18T05:00:00Z",
+        "bandName": "Artistry"
+      },
+      {
+        "name": "Artistry Premium Area Rug",
+        "image":"https://i.ibb.co/By4wc7t/airtist07.jpg",
+        "description": "A premium area rug with a soft texture and intricate design.",
+        "price": 159.99,
+        "category":"Home Goods",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T04:00:00Z",
+        "bandName": "Artistry"
+      },
+      {
+        "name": "Artistry Elegant Curtain Set",
+        "image":"https://i.ibb.co/bBHZFDq/airtist08.jpg",
+        "description": "An elegant curtain set designed to complement any room with its sophisticated look.",
+        "price": 89.99,
+        "category":"Home Goods",
+        "ratings": 4.5,
+        "creationDate": "2024-08-18T03:00:00Z",
+        "bandName": "Artistry"
+      },
+      {
+        "name": "CampSafe Water Filter",
+        "image":"https://i.ibb.co/7Q3sQjp/outdor05.jpg",
+        "description": "A reliable water filter designed to purify water from natural sources.",
+        "price": 49.99,
+        "category":"Outdoor",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T06:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "CampSafe Camping Lantern",
+        "image":"https://i.ibb.co/zb80C1N/outdor06.jpg",
+        "description": "A bright and durable camping lantern with multiple lighting modes.",
+        "price": 39.99,
+        "category":"Outdoor",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T05:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "CampSafe Multi-tool Kit",
+        "image":"https://i.ibb.co/51XD30V/outdor07.jpg",
+        "description": "A versatile multi-tool kit featuring pliers, knives, and various other tools.",
+        "price": 29.99,
+        "category":"Outdoor",
+        "ratings": 4.5,
+        "creationDate": "2024-08-18T04:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "CampSafe Insulated Cooler",
+        "image":"https://i.ibb.co/NLhr8Pk/outdor08.jpg",
+        "description": "An insulated cooler with high capacity to keep your food and drinks cold.",
+        "price": 89.99,
+        "category":"Outdoor",
+        "ratings": 4.6,
+        "creationDate": "2024-08-18T03:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "CampSafe Hiking Backpack",
+        "image":"https://i.ibb.co/vj0c5RW/outdor09.jpg",
+        "description": "A durable hiking backpack with multiple compartments and adjustable straps.",
+        "price": 99.99,
+        "category":"Outdoor",
+        "ratings": 4.8,
+        "creationDate": "2024-08-18T02:00:00Z",
+        "bandName": "CampSafe"
+      },
+      {
+        "name": "CampSafe Outdoor Blanket",
+        "image":"https://i.ibb.co/C1Ycj8w/outdor10.jpg",
+        "description": "A water-resistant outdoor blanket perfect for picnics and camping.",
+        "price": 34.99,
+        "category":"Outdoor",
+        "ratings": 4.4,
+        "creationDate": "2024-08-18T01:00:00Z",
+        "bandName": "CampSafe"
+      }
+]

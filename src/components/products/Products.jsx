@@ -56,9 +56,10 @@ const Products = () => {
                 <h1 className="text-2xl font-bold text-center">Our Shop Category</h1>
                 <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-10 gap-4 md:gap-0 md:px-24">
 
-                    <div className="flex items-center gap-4">
-                        {/* filter by band data */}
-                        <div>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                       <div className="flex md:flex-row items-center gap-4 md:gap-8">
+                         {/* filter by band data */}
+                         <div>
                             <select
                                 onChange={(e) => setBandValue(e.target.value)}
                                 name='band'
@@ -82,13 +83,14 @@ const Products = () => {
                                 id='category'
                                 className='border p-4 rounded-md'>
                                 <option disabled >Category</option>
-                                <option value='electries'>Electries</option>
+                                <option value='electronics'>Electronics</option>
                                 <option value='fitness'>Fitness</option>
                                 <option value='home appliances'>Home Appliances</option>
                                 <option value='home goods'>Home Goods</option>
                                 <option value='outdoor'>Outdoor</option>
                             </select>
                         </div>
+                       </div>
 
                         {/* range by price data */}
                         <div>
@@ -157,7 +159,7 @@ const Products = () => {
                     <button
                         disabled={currentPage === 1}
                         onClick={() => handleChengeButton(currentPage - 1)}
-                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700 px-2 py-1 mx-1 text-sm sm:px-3 sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md bg-white text-gray-700 hover:bg-primary hover:text-white'
+                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700  py-1  text-sm  sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md bg-white text-gray-700 hover:bg-primary hover:text-white'
                     >
                         <div className='flex items-center -mx-1'>
                             <span className='mx-1'>Previous</span>
@@ -186,7 +188,7 @@ const Products = () => {
                                 <button
                                     key={idx}
                                     onClick={() => handleChengeButton(btnNum)}
-                                    className={`px-2 py-1 mx-1 text-sm sm:px-3 sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md ${currentPage === btnNum
+                                    className={`px-2 py-1 mx-1 text-sm sm:px-2 sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md ${currentPage === btnNum
                                         ? 'bg-red-600 text-white'
                                         : 'bg-white text-gray-700 dark:bg-gray-800 dark:text-gray-200 hover:bg-red-400 hover:text-white'
                                         }`}
@@ -200,7 +202,7 @@ const Products = () => {
                     <button
                         disabled={currentPage === numberOfPages}
                         onClick={() => handleChengeButton(currentPage + 1)}
-                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700 px-2 py-1 mx-1 text-sm sm:px-3 sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md bg-white text-gray-700 hover:bg-primary hover:text-white'
+                        className='disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700  py-1  text-sm  sm:py-2 sm:text-base md:px-4 md:py-2 md:mx-2 md:text-lg transition-colors duration-300 transform rounded-md bg-white text-gray-700 hover:bg-primary hover:text-white'
                     >
                         <div className='flex items-center -mx-1'>
                             <span className='mx-1'>Next</span>
