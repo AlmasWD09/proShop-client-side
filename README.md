@@ -30,6 +30,7 @@
 - [react-icons](https://www.npmjs.com/package/react-icons)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [firebase](https://www.npmjs.com/package/firebase)
+- [loading-spiner](https://mhnpd.github.io/react-loader-spinner/docs/intro)
 
 ## Clone repository Client-site (NEED)
 -[npm i]
